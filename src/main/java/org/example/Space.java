@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
@@ -10,19 +11,19 @@ public class Space {
 
     Random random = new Random();
 
-    public void constructSpaces(Map<String, Integer> carParkSpaces){
+    public void constructSpaces(List<String> carParkSpaces){
         int a = random.nextInt(15);
         int b = random.nextInt(15);
         for (int i = 0; i < a; i++) {
-            carParkSpaces.put("regularSpace", 2);
+            carParkSpaces.add("regularSpace");
         }
         for (int i = 0; i < b; i++){
-            carParkSpaces.put("compactSpace", 1);
+            carParkSpaces.add("compactSpace");
         }
         System.out.println(carParkSpaces);
     }
 
-    public int countSpaces(Map<String, Integer> carParkSpaces){
+    public int countSpaces(List<String> carParkSpaces){
         System.out.println(carParkSpaces.size());
         return carParkSpaces.size();
     }
