@@ -6,14 +6,18 @@ import java.util.List;
 import java.util.Map;
 
 public class CarPark {
-       private List<Space> carParkSpaces = new ArrayList<>();
+       private List<String> carParkSpaces = new ArrayList<>();
 
-        public List<Space> getCarParkSpaces() {
+        public List<String> getCarParkSpaces() {
                 return carParkSpaces;
         }
 
-        public void setCarParkSpaces(List<Space> carParkSpaces) {
+        public void setCarParkSpaces(List<String> carParkSpaces) {
                 this.carParkSpaces = carParkSpaces;
+        }
+
+        public void getNumberOfTotalSpaces(){
+            System.out.println(carParkSpaces.size());
         }
 
         public void getRemainingSpaces(){

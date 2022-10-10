@@ -1,10 +1,12 @@
 package org.example;
 
 import java.util.List;
+import java.util.Random;
 
-public class RegularSpace extends Space {
+public class RegularSpace{
 
 
+    Random random = new Random();
     private int holds = 2;
 
     public int getHolds() {
@@ -25,12 +27,12 @@ public class RegularSpace extends Space {
         return "regular space, holds 2";
     }
 
-    @Override
-    public void constructRegularSpaces(List<Space> carParkSpaces, RegularSpace regularSpace){
+    public void constructRegularSpaces(List<String> carParkSpaces, RegularSpace regularSpace){
         int a = random.nextInt(15);
         for (int i = a; i > 0; i--) {
-            carParkSpaces.add(regularSpace);
+            carParkSpaces.add("regularSpace");
         }
         System.out.println(carParkSpaces);
     }
+
 }
