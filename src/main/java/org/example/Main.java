@@ -9,5 +9,8 @@ public class Main {
         regularSpace.constructRegularSpaces(carPark.getCarParkSpaces(), regularSpace);
         compactSpace.constructCompactSpaces(carPark.getCarParkSpaces(), compactSpace);
         carPark.getNumberOfTotalSpaces();
+        carPark.createTheVehicles();
+        carPark.listVehicles();
+//        carPark.populateCarPark(SpaceType);
     }
 }

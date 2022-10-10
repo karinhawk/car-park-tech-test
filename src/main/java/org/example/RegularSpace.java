@@ -27,10 +27,10 @@ public class RegularSpace{
         return "regular space, holds 2";
     }
 
-    public void constructRegularSpaces(List<String> carParkSpaces, RegularSpace regularSpace){
+    public void constructRegularSpaces(List<SpaceType> carParkSpaces, RegularSpace regularSpace){
         int a = random.nextInt(15);
         for (int i = a; i > 0; i--) {
-            carParkSpaces.add("regularSpace");
+            carParkSpaces.add(SpaceType.REGULAR);
         }
         System.out.println(carParkSpaces);
     }

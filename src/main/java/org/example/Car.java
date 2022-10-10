@@ -1,9 +1,14 @@
 package org.example;
 
-public class Car {
+public class Car extends Vehicle {
 
     private int spaces = 2;
 
+    public Car(int spaces) {
+        super(spaces);
+    }
+
+    @Override
     public int getSpaces() {
         return spaces;
     }
@@ -12,5 +17,8 @@ public class Car {
         this.spaces = spaces;
     }
 
-    VehicleType car = VehicleType.CAR;
+    @Override
+    public VehicleType getType() {
+        return VehicleType.CAR;
+    }
 }
