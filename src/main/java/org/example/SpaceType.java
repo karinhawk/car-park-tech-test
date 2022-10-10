@@ -1,8 +1,5 @@
 package org.example;
 
-public class SpaceType {
-
-    public enum TypeOfSpace {
+    public enum SpaceType {
         COMPACT, REGULAR;
     }
-}
