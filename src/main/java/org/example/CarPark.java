@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 public class CarPark {
-        List<String> carParkSpaces = new ArrayList<>();
+       private List<Space> carParkSpaces = new ArrayList<>();
 
-        public List<String> getCarParkSpaces() {
+        public List<Space> getCarParkSpaces() {
                 return carParkSpaces;
         }
 
-        public void setCarParkSpaces(List<String> carParkSpaces) {
+        public void setCarParkSpaces(List<Space> carParkSpaces) {
                 this.carParkSpaces = carParkSpaces;
         }
 
