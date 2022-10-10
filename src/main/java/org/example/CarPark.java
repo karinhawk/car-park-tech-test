@@ -15,8 +15,17 @@ public class CarPark {
 
        private List<Vehicle> vehicleList = new ArrayList<>();
 
+    private List<Vehicle> inCarPark = new ArrayList<>();
 
-       Random random = new Random();
+    public List<Vehicle> getInCarPark() {
+        return inCarPark;
+    }
+
+    public void setInCarPark(List<Vehicle> inCarPark) {
+        this.inCarPark = inCarPark;
+    }
+
+    Random random = new Random();
 
     public List<Vehicle> getVehicleList() {
         return vehicleList;
@@ -29,6 +38,8 @@ public class CarPark {
     public List<SpaceType> getCarParkSpaces() {
                 return carParkSpaces;
         }
+
+
 
         public void setCarParkSpaces(List<SpaceType> carParkSpaces) {
                 this.carParkSpaces = carParkSpaces;
@@ -60,11 +71,10 @@ public class CarPark {
 //            //add
 //            int a = carParkSpaces.size();
 //            for (int i = a; i > 0; i--) {
-//                if (spaceType == REGULAR){
-//                    factory.createVehicle(CAR);
+//                if (carParkSpaces == REGULAR){
+//                    inCarPark.add(Car);
 //                    carParkSpaces.remove(REGULAR);
 //                } else if (spaceType == COMPACT){
-//                    factory.createVehicle(MOTORBIKE);
 //                    carParkSpaces.remove(COMPACT);
 //                }
 //            }
